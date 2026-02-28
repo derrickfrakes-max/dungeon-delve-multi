@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<title>Dungeon Delve</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Dungeon Delve</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="game-container">
-  <canvas id="gameCanvas"></canvas>
-  <div id="touch-controls">
-    <div id="joystick-zone">
-      <div id="joystick-base">
-        <div id="joystick-knob"></div>
-      </div>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="touch-controls">
+            <div id="joystick-zone">
+                <div id="joystick-base">
+                    <div id="joystick-knob"></div>
+                </div>
+            </div>
+            <div id="action-buttons">
+                <button class="action-btn" id="btn-action" aria-label="Action">A</button>
+            </div>
+        </div>
+        <div id="fps-counter">FPS: --</div>
     </div>
-    <div id="action-buttons">
-      <button class="action-btn" id="btn-action" aria-label="Action">A</button>
-    </div>
-  </div>
-  <div id="fps-counter">FPS: --</div>
-</div>
 
-<!-- Engine Core -->
-<script src="js/config.js"></script>
-<script src="js/utils.js"></script>
-<script src="js/input.js"></script>
-<script src="js/camera.js"></script>
-<script src="js/entity.js"></script>
-<script src="js/tilemap.js"></script>
-<script src="js/player.js"></script>
-<script src="js/renderer.js"></script>
-<script src="js/scene.js"></script>
-<script src="js/game.js"></script>
-
+    <!-- Engine Core -->
+    <script src="config.js"></script>
+    <script src="utils.js"></script>
+    <script src="input.js"></script>
+    <script src="camera.js"></script>
+    <script src="entity.js"></script>
+    <script src="tilemap.js"></script>
+    <script src="player.js"></script>
+    <script src="renderer.js"></script>
+    <script src="scene.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
