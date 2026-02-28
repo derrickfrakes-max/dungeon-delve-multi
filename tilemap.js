@@ -23,8 +23,6 @@ class Tilemap {
           this.data[r][c] = CONFIG.TILE.WALL;
         else if ((r===4||r===10) && (c===5||c===14))
           this.data[r][c] = CONFIG.TILE.WALL;
-        else if (r>=6 && r<=8 && c>=9 && c<=11 && !(r===7 && c===10))
-          this.data[r][c] = CONFIG.TILE.WALL;
         else
           this.data[r][c] = CONFIG.TILE.FLOOR;
       }
